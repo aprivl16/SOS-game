@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SOS</title>
+
+	<link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/media.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="../fonts/bebasneue/bebasneue.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="#" class="header__logo logo ">
+					<img src="../img/logo/logo.png" alt="Логотип SOS" width="55" height="55">
+				</a>
+				<nav class="nav">
+					<ul class="menu">
+						<li class="menu__item"><a href="#main" class="text">MAIN</a></li>
+						<li class="menu__item"><a href="#about" class="text">about</a></li>
+						<li class="menu__item"><a href="#features" class="text">game features</a></li>
+						<li class="menu__item"><a href="#requirement" class="text">System requirements</a></li>
+						<li class="menu__item"><a href="#quotes" class="text">quotes</a></li>
+					</ul>
+				</nav>
+				<div class="more">
+					<div class="lang-setting">
+						<div class="lang text current-lang">ENG</div>
+						<button class="switcher">
+							<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+								<path d="M1.48047 1.11331L5.12832 4.31369L8.77552 1.11331" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+							</svg>
+						</button>
+						<ul class="place-for-choose">
+							<li><button class="lang another">рус</button></li>
+							<li><button class="lang another">fra</button></li>
+						</ul>
+					</div>
+					<div class="platform-links">
+						<a href="https://www.xbox.com/en-US?xr=mebarnav" target="_blank" class="planform-link xbox xb">
+							<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+								<path d="M10.5514 3.15842C12.1356 3.77963 13.667 4.6001 15.1104 5.60225C15.2747 5.7136 15.4625 5.77221 15.6502 5.77221C15.838 5.77221 16.0257 5.7136 16.19 5.60225C17.6334 4.6001 19.1648 3.77377 20.7491 3.15256C21.107 3.0119 21.3476 2.66027 21.3417 2.27348C21.3417 1.88668 21.1011 1.54091 20.7373 1.40612C17.5689 0.204714 13.7315 0.204714 10.569 1.40612C10.211 1.54091 9.9646 1.89254 9.9646 2.27348C9.9646 2.65441 10.1876 3.01776 10.5514 3.15842Z" fill="#FFB548"/>
+								<path d="M24.1587 3.16374C23.8594 2.95862 23.478 2.94104 23.1553 3.12271C21.4009 4.13072 19.7052 5.28524 18.1034 6.55698C17.8922 6.72693 17.7631 6.97893 17.7513 7.24852C17.7396 7.5181 17.8452 7.78183 18.0388 7.96936C21.3599 11.1282 25.96 20.8156 27.0162 25.2696C24.7278 21.4017 19.6231 12.3003 16.2845 9.18835C15.9265 8.8543 15.3633 8.8543 15.0053 9.18835C11.6608 12.3003 6.5737 21.4075 4.28536 25.2813C5.34152 20.8273 9.92992 11.1282 13.2509 7.96936C13.4504 7.78183 13.5561 7.5181 13.5443 7.24852C13.5326 6.97893 13.4035 6.72693 13.1923 6.55698C11.5904 5.28524 9.88885 4.13072 8.14033 3.12271C7.82935 2.94104 7.43622 2.95862 7.13698 3.16374C3.05905 5.97093 0.624023 10.5832 0.624023 15.506C0.624023 19.1043 1.92075 22.5738 4.28536 25.2813C7.11351 28.5984 11.2501 30.5089 15.6449 30.5089C20.0397 30.5089 24.1822 28.6042 27.0162 25.2755C29.369 22.5796 30.6658 19.1102 30.6658 15.506C30.6658 10.5832 28.2307 5.97093 24.1587 3.16374Z" fill="#FFB548"/>
+							</svg>
+						</a>
+						<a href="https://store.steampowered.com/" target="_blank" class="planform-link steam st">
+							<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.7746 30.5089C24.0936 30.5089 30.8375 23.7932 30.8375 15.5089C30.8375 7.22461 24.0936 0.508881 15.7746 0.508881C7.45558 0.508881 0.71167 7.22461 0.71167 15.5089C0.71167 17.0369 0.941106 18.5116 1.36754 19.9005C1.47636 19.9201 1.6523 19.9646 1.90866 20.0395L1.50834 13.7669C1.50834 13.6519 1.7031 13.5966 1.88153 13.546C1.97946 13.5182 2.07247 13.4918 2.12567 13.4577C2.27094 13.3662 5.26258 14.454 5.42239 14.5262L9.248 16.2495C10.2359 15.6285 11.4175 15.3782 12.5797 15.5467L16.0566 11.3252C16.1002 7.95572 18.8604 5.24088 22.2551 5.23606C25.4269 5.26976 28.0564 7.67653 28.3567 10.8101C28.6763 14.1989 26.1775 17.2025 22.7684 17.525L16.9767 21.6406C16.6232 23.4457 15.3254 24.9235 13.5724 25.5107C10.8848 26.4157 7.96472 24.9812 7.05917 22.3049L5.04467 21.6406C4.89531 21.5934 2.15386 20.4576 1.41129 20.0406C3.34051 26.1099 9.04168 30.5089 15.7746 30.5089ZM25.3546 11.3973C25.3546 13.0987 23.967 14.478 22.2553 14.478C20.5436 14.478 19.156 13.0987 19.156 11.3973C19.156 9.69591 20.5436 8.31664 22.2553 8.31664C23.967 8.31664 25.3546 9.69591 25.3546 11.3973ZM24.3236 11.3973C24.3236 12.5325 23.3978 13.4527 22.2557 13.4527C21.1137 13.4527 20.1879 12.5325 20.1879 11.3973C20.1879 10.2622 21.1137 9.34195 22.2557 9.34195C23.3978 9.34195 24.3236 10.2622 24.3236 11.3973ZM10.5804 23.412C10.9969 23.6142 11.4569 23.7201 11.9218 23.7201C12.2753 23.7201 12.6191 23.6623 12.9581 23.5516C13.7377 23.282 14.3721 22.7189 14.7304 21.9824C15.4761 20.4469 14.8272 18.6081 13.2873 17.8668C13.0259 17.7417 12.7208 17.8476 12.5949 18.1027C12.469 18.3626 12.5755 18.6659 12.8322 18.791C12.8661 18.8055 12.9 18.8199 12.9338 18.8392C13.9508 19.359 14.343 20.5961 13.82 21.6069C13.297 22.6178 12.0477 23.0077 11.0356 22.4878C10.7741 22.3627 10.469 22.4686 10.3431 22.7237C10.2172 22.9836 10.3238 23.2869 10.5804 23.412Z" fill="#FFB548"/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="platform-links_mobile">
+						<button href="#" class="joystick">
+							<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+							width="31" height="31" viewBox="0 0 1280.000000 819.000000"
+							preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,819.000000) scale(0.100000,-0.100000)"
+							fill="#FFB548" stroke="none">
+							<path d="M2485 8180 c-120 -14 -268 -39 -385 -66 -250 -58 -381 -122 -495
+							-242 -83 -88 -184 -343 -245 -622 -17 -79 -32 -146 -34 -147 -1 -1 -54 -40
+							-118 -85 -319 -228 -554 -446 -654 -608 -104 -170 -194 -394 -274 -686 -59
+							-216 -57 -203 -159 -1329 -93 -1019 -115 -1426 -116 -2130 0 -546 12 -879 40
+							-1106 35 -278 134 -493 312 -680 234 -245 476 -384 786 -451 144 -31 415 -31
+							529 0 163 44 323 137 501 291 243 210 429 488 714 1071 68 140 148 302 176
+							360 35 71 71 126 111 170 33 36 83 98 113 137 l54 73 102 -83 c231 -187 344
+							-242 609 -298 124 -26 369 -31 488 -10 273 48 509 137 710 269 172 114 276
+							246 413 524 l72 146 665 0 665 0 72 -146 c137 -278 241 -410 413 -524 198
+							-131 437 -221 710 -269 119 -21 364 -16 488 10 265 56 378 111 609 298 l102
+							83 54 -73 c29 -39 78 -99 109 -132 63 -69 80 -101 262 -475 303 -626 481 -900
+							726 -1117 178 -158 351 -260 517 -305 115 -31 385 -31 530 0 310 67 552 206
+							786 451 178 187 277 402 312 680 28 227 40 560 40 1106 -1 705 -23 1112 -116
+							2130 -100 1107 -104 1137 -175 1383 -87 301 -174 504 -288 675 -94 142 -343
+							367 -633 571 l-112 80 -11 55 c-6 31 -27 118 -46 194 -96 385 -204 558 -414
+							660 -137 67 -349 122 -610 158 -140 20 -434 17 -544 -5 -102 -20 -228 -64
+							-292 -101 -97 -57 -213 -183 -333 -362 -75 -113 -100 -168 -135 -299 -28 -108
+							-76 -378 -76 -430 l0 -31 -2610 0 -2610 0 0 31 c0 105 -82 482 -126 583 -33
+							77 -174 280 -252 364 -125 135 -240 198 -437 241 -105 22 -365 32 -490 18z
+							m8135 -1386 c198 -55 331 -235 332 -449 0 -103 -21 -174 -79 -263 -129 -196
+							-410 -262 -613 -144 -240 139 -312 442 -159 671 49 74 104 120 190 160 109 51
+							206 58 329 25z m-7940 -523 l0 -279 -55 -69 c-91 -111 -234 -251 -281 -274
+							l-44 -21 -44 21 c-51 25 -162 131 -264 252 l-72 86 0 282 0 281 380 0 380 0 0
+							-279z m6833 -481 c127 -48 241 -168 282 -295 26 -79 26 -210 1 -285 -35 -103
+							-91 -179 -177 -240 -86 -60 -156 -82 -264 -84 -110 -1 -184 21 -270 79 -241
+							164 -273 511 -66 715 63 62 131 102 212 125 75 21 206 14 282 -15z m2209 19
+							c136 -29 262 -128 325 -257 35 -69 38 -83 41 -178 6 -150 -25 -237 -124 -343
+							-179 -194 -479 -197 -670 -7 -93 93 -133 194 -134 333 -1 290 275 512 562 452z
+							m-9909 -79 c162 -130 287 -272 287 -325 0 -49 -114 -178 -279 -314 l-74 -61
+							-284 0 -283 0 0 373 c0 206 3 377 7 380 3 4 129 7 279 7 l273 0 74 -60z m1602
+							-320 l0 -375 -279 -3 -279 -2 -55 42 c-88 67 -242 219 -274 267 -15 25 -28 57
+							-28 72 0 54 137 204 309 337 l53 42 277 -2 276 -3 0 -375z m4242 54 c195 -64
+							351 -119 347 -124 -5 -4 -47 -19 -94 -34 -47 -14 -205 -66 -352 -115 l-268
+							-89 0 239 c0 131 3 239 6 239 3 0 166 -52 361 -116z m-2207 -119 l0 -225 -365
+							0 -365 0 0 225 0 225 365 0 365 0 0 -225z m-3095 -184 c55 -34 128 -105 227
+							-221 l98 -115 -2 -280 -3 -280 -375 0 -375 0 -3 281 -2 281 66 79 c99 118 162
+							181 228 230 64 49 95 54 141 25z m8326 -383 c177 -85 271 -231 271 -423 0
+							-138 -49 -254 -146 -343 -99 -91 -199 -126 -346 -120 -88 3 -104 7 -174 42
+							-383 189 -344 733 62 867 45 15 79 18 158 16 92 -3 109 -7 175 -39z m-6193
+							-794 c220 -45 429 -180 558 -360 58 -80 119 -211 145 -309 33 -120 33 -338 0
+							-455 -65 -231 -196 -412 -387 -537 -160 -104 -308 -147 -504 -147 -188 1 -343
+							46 -495 146 -351 230 -500 664 -365 1065 45 134 103 226 215 339 140 142 278
+							218 465 258 90 20 273 20 368 0z m4129 1 c302 -64 548 -262 664 -536 222 -521
+							-76 -1115 -628 -1251 -123 -30 -303 -30 -426 0 -216 53 -412 187 -535 365 -81
+							118 -125 221 -152 361 -17 83 -14 267 4 355 76 354 351 626 716 707 78 17 275
+							17 357 -1z"/>
+							</g>
+							</svg>
+						</button>
+						<div class="mobile-links__wrapper">
+							<a href="https://www.xbox.com/en-US?xr=mebarnav" target="_blank" class="planform-link xbox xbox_vis">
+								<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+									<path d="M10.5514 3.15842C12.1356 3.77963 13.667 4.6001 15.1104 5.60225C15.2747 5.7136 15.4625 5.77221 15.6502 5.77221C15.838 5.77221 16.0257 5.7136 16.19 5.60225C17.6334 4.6001 19.1648 3.77377 20.7491 3.15256C21.107 3.0119 21.3476 2.66027 21.3417 2.27348C21.3417 1.88668 21.1011 1.54091 20.7373 1.40612C17.5689 0.204714 13.7315 0.204714 10.569 1.40612C10.211 1.54091 9.9646 1.89254 9.9646 2.27348C9.9646 2.65441 10.1876 3.01776 10.5514 3.15842Z" fill="#FFB548"/>
+									<path d="M24.1587 3.16374C23.8594 2.95862 23.478 2.94104 23.1553 3.12271C21.4009 4.13072 19.7052 5.28524 18.1034 6.55698C17.8922 6.72693 17.7631 6.97893 17.7513 7.24852C17.7396 7.5181 17.8452 7.78183 18.0388 7.96936C21.3599 11.1282 25.96 20.8156 27.0162 25.2696C24.7278 21.4017 19.6231 12.3003 16.2845 9.18835C15.9265 8.8543 15.3633 8.8543 15.0053 9.18835C11.6608 12.3003 6.5737 21.4075 4.28536 25.2813C5.34152 20.8273 9.92992 11.1282 13.2509 7.96936C13.4504 7.78183 13.5561 7.5181 13.5443 7.24852C13.5326 6.97893 13.4035 6.72693 13.1923 6.55698C11.5904 5.28524 9.88885 4.13072 8.14033 3.12271C7.82935 2.94104 7.43622 2.95862 7.13698 3.16374C3.05905 5.97093 0.624023 10.5832 0.624023 15.506C0.624023 19.1043 1.92075 22.5738 4.28536 25.2813C7.11351 28.5984 11.2501 30.5089 15.6449 30.5089C20.0397 30.5089 24.1822 28.6042 27.0162 25.2755C29.369 22.5796 30.6658 19.1102 30.6658 15.506C30.6658 10.5832 28.2307 5.97093 24.1587 3.16374Z" fill="#FFB548"/>
+								</svg>
+							</a>
+							<a href="https://store.steampowered.com/" target="_blank" class="planform-link steam steam_vis">
+								<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M15.7746 30.5089C24.0936 30.5089 30.8375 23.7932 30.8375 15.5089C30.8375 7.22461 24.0936 0.508881 15.7746 0.508881C7.45558 0.508881 0.71167 7.22461 0.71167 15.5089C0.71167 17.0369 0.941106 18.5116 1.36754 19.9005C1.47636 19.9201 1.6523 19.9646 1.90866 20.0395L1.50834 13.7669C1.50834 13.6519 1.7031 13.5966 1.88153 13.546C1.97946 13.5182 2.07247 13.4918 2.12567 13.4577C2.27094 13.3662 5.26258 14.454 5.42239 14.5262L9.248 16.2495C10.2359 15.6285 11.4175 15.3782 12.5797 15.5467L16.0566 11.3252C16.1002 7.95572 18.8604 5.24088 22.2551 5.23606C25.4269 5.26976 28.0564 7.67653 28.3567 10.8101C28.6763 14.1989 26.1775 17.2025 22.7684 17.525L16.9767 21.6406C16.6232 23.4457 15.3254 24.9235 13.5724 25.5107C10.8848 26.4157 7.96472 24.9812 7.05917 22.3049L5.04467 21.6406C4.89531 21.5934 2.15386 20.4576 1.41129 20.0406C3.34051 26.1099 9.04168 30.5089 15.7746 30.5089ZM25.3546 11.3973C25.3546 13.0987 23.967 14.478 22.2553 14.478C20.5436 14.478 19.156 13.0987 19.156 11.3973C19.156 9.69591 20.5436 8.31664 22.2553 8.31664C23.967 8.31664 25.3546 9.69591 25.3546 11.3973ZM24.3236 11.3973C24.3236 12.5325 23.3978 13.4527 22.2557 13.4527C21.1137 13.4527 20.1879 12.5325 20.1879 11.3973C20.1879 10.2622 21.1137 9.34195 22.2557 9.34195C23.3978 9.34195 24.3236 10.2622 24.3236 11.3973ZM10.5804 23.412C10.9969 23.6142 11.4569 23.7201 11.9218 23.7201C12.2753 23.7201 12.6191 23.6623 12.9581 23.5516C13.7377 23.282 14.3721 22.7189 14.7304 21.9824C15.4761 20.4469 14.8272 18.6081 13.2873 17.8668C13.0259 17.7417 12.7208 17.8476 12.5949 18.1027C12.469 18.3626 12.5755 18.6659 12.8322 18.791C12.8661 18.8055 12.9 18.8199 12.9338 18.8392C13.9508 19.359 14.343 20.5961 13.82 21.6069C13.297 22.6178 12.0477 23.0077 11.0356 22.4878C10.7741 22.3627 10.469 22.4686 10.3431 22.7237C10.2172 22.9836 10.3238 23.2869 10.5804 23.412Z" fill="#FFB548"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+						<button class="burger">
+							<svg xmlns="http://www.w3.org/2000/svg" class="burger__svg" width="25" height="18" viewBox="0 0 25 18" fill="none">
+								<rect x="9.49854" y="15.0166" width="14.585" height="2.5" rx="1.25" fill="white"/>
+								<rect x="0.596191" y="7.51657" width="23.4873" height="2.5" rx="1.25" fill="white"/>
+								<rect x="0.596191" y="0.016571" width="23.4873" height="2.5" rx="1.25" fill="white"/>
+							</svg>
+							<span class="burger__close"></span>
+						</button>
+				</div>
+			</div>
+			<div class="mobile-menu-open">
+					<ul class="menu-mobile">
+						<li class="menu__item-mobile"><a href="#main"></a></li>
+						<li class="menu__item-mobile"><a href="#about"></a></li>
+						<li class="menu__item-mobile"><a href="#features"></a></li>
+						<li class="menu__item-mobile"><a href="#requirement"></a></li>
+						<li class="menu__item-mobile"><a href="#quotes"></a></li>
+						<body></body>
+					</ul>
+					<div class="mobile-links-platform">
+						<a href="https://www.xbox.com/en-US?xr=mebarnav" target="_blank" class="planform-link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+								<path d="M10.5514 3.15842C12.1356 3.77963 13.667 4.6001 15.1104 5.60225C15.2747 5.7136 15.4625 5.77221 15.6502 5.77221C15.838 5.77221 16.0257 5.7136 16.19 5.60225C17.6334 4.6001 19.1648 3.77377 20.7491 3.15256C21.107 3.0119 21.3476 2.66027 21.3417 2.27348C21.3417 1.88668 21.1011 1.54091 20.7373 1.40612C17.5689 0.204714 13.7315 0.204714 10.569 1.40612C10.211 1.54091 9.9646 1.89254 9.9646 2.27348C9.9646 2.65441 10.1876 3.01776 10.5514 3.15842Z" fill="#FFB548"/>
+								<path d="M24.1587 3.16374C23.8594 2.95862 23.478 2.94104 23.1553 3.12271C21.4009 4.13072 19.7052 5.28524 18.1034 6.55698C17.8922 6.72693 17.7631 6.97893 17.7513 7.24852C17.7396 7.5181 17.8452 7.78183 18.0388 7.96936C21.3599 11.1282 25.96 20.8156 27.0162 25.2696C24.7278 21.4017 19.6231 12.3003 16.2845 9.18835C15.9265 8.8543 15.3633 8.8543 15.0053 9.18835C11.6608 12.3003 6.5737 21.4075 4.28536 25.2813C5.34152 20.8273 9.92992 11.1282 13.2509 7.96936C13.4504 7.78183 13.5561 7.5181 13.5443 7.24852C13.5326 6.97893 13.4035 6.72693 13.1923 6.55698C11.5904 5.28524 9.88885 4.13072 8.14033 3.12271C7.82935 2.94104 7.43622 2.95862 7.13698 3.16374C3.05905 5.97093 0.624023 10.5832 0.624023 15.506C0.624023 19.1043 1.92075 22.5738 4.28536 25.2813C7.11351 28.5984 11.2501 30.5089 15.6449 30.5089C20.0397 30.5089 24.1822 28.6042 27.0162 25.2755C29.369 22.5796 30.6658 19.1102 30.6658 15.506C30.6658 10.5832 28.2307 5.97093 24.1587 3.16374Z" fill="#FFB548"/>
+							</svg>
+						</a>
+						<a href="https://store.steampowered.com/" target="_blank" class="planform-link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.7746 30.5089C24.0936 30.5089 30.8375 23.7932 30.8375 15.5089C30.8375 7.22461 24.0936 0.508881 15.7746 0.508881C7.45558 0.508881 0.71167 7.22461 0.71167 15.5089C0.71167 17.0369 0.941106 18.5116 1.36754 19.9005C1.47636 19.9201 1.6523 19.9646 1.90866 20.0395L1.50834 13.7669C1.50834 13.6519 1.7031 13.5966 1.88153 13.546C1.97946 13.5182 2.07247 13.4918 2.12567 13.4577C2.27094 13.3662 5.26258 14.454 5.42239 14.5262L9.248 16.2495C10.2359 15.6285 11.4175 15.3782 12.5797 15.5467L16.0566 11.3252C16.1002 7.95572 18.8604 5.24088 22.2551 5.23606C25.4269 5.26976 28.0564 7.67653 28.3567 10.8101C28.6763 14.1989 26.1775 17.2025 22.7684 17.525L16.9767 21.6406C16.6232 23.4457 15.3254 24.9235 13.5724 25.5107C10.8848 26.4157 7.96472 24.9812 7.05917 22.3049L5.04467 21.6406C4.89531 21.5934 2.15386 20.4576 1.41129 20.0406C3.34051 26.1099 9.04168 30.5089 15.7746 30.5089ZM25.3546 11.3973C25.3546 13.0987 23.967 14.478 22.2553 14.478C20.5436 14.478 19.156 13.0987 19.156 11.3973C19.156 9.69591 20.5436 8.31664 22.2553 8.31664C23.967 8.31664 25.3546 9.69591 25.3546 11.3973ZM24.3236 11.3973C24.3236 12.5325 23.3978 13.4527 22.2557 13.4527C21.1137 13.4527 20.1879 12.5325 20.1879 11.3973C20.1879 10.2622 21.1137 9.34195 22.2557 9.34195C23.3978 9.34195 24.3236 10.2622 24.3236 11.3973ZM10.5804 23.412C10.9969 23.6142 11.4569 23.7201 11.9218 23.7201C12.2753 23.7201 12.6191 23.6623 12.9581 23.5516C13.7377 23.282 14.3721 22.7189 14.7304 21.9824C15.4761 20.4469 14.8272 18.6081 13.2873 17.8668C13.0259 17.7417 12.7208 17.8476 12.5949 18.1027C12.469 18.3626 12.5755 18.6659 12.8322 18.791C12.8661 18.8055 12.9 18.8199 12.9338 18.8392C13.9508 19.359 14.343 20.5961 13.82 21.6069C13.297 22.6178 12.0477 23.0077 11.0356 22.4878C10.7741 22.3627 10.469 22.4686 10.3431 22.7237C10.2172 22.9836 10.3238 23.2869 10.5804 23.412Z" fill="#FFB548"/>
+							</svg>
+						</a>
+					</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main" id="main">
+		<section class="hero">
+			<div class="container">
+				<div class="hero__wrapper">
+					<h1 class="hero__title title text">SURVIVE AT ALL COSTS</h1>
+					<h3 class="sub-hero__title text">Experience new social battle royale game</h3>
+					<a href="#" class="hero__buy">
+						<p class="buy__text text">Buy Now on Steam</p>
+						<span class="buy__price">$14.99</span>
+					</a>
+					<div class="scroll-down">
+						<p class="scroll-down__text text">The story</p>
+						<button class="scroll-down__button" >
+							<svg class="arr-down" xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12" fill="none">
+								<path d="M21.5786 1.83362H1.32422L11.338 10.0027L21.5786 1.83362Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about__wrapper">
+					<div class="about__info">
+						<h3 class="sup-about__title sup-title text">What is SOS?</h3>
+						<h2 class="about__title title text">social battle royale game</h2>
+						
+					</div>
+					<div class="about__gallery">
+						<div class="gallery__text about__text-outer">
+							<p class="about__text text">Each round, <strong class="text">you</strong> and <strong class="text">15</strong> other contestants compete to escape a deadly island filled with monsters. The trick is: <strong class="text">three</strong> people can survive. Will you run solo or form friendships with others to escape?
+							</p>
+							<p class="about__text text">Making the right decisions could be the
+								difference between <span>life and death.<span>
+							</p>
+						</div>
+
+						<div class="gallery__img">
+							<div class="img__wrapper">
+								<img src="../img/gallery/img1.png" class="gallery__img-first"  alt="" value="1">
+								<img src="../img/gallery/img2.png" class="gallery__img-second" alt="" value="2">
+								<img src="../img/gallery/img3.png" class="gallery__img-third"  alt="" value="3">
+							</div>
+
+							<button class="gallery__switcher next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="38" viewBox="0 0 18 38" fill="none">
+									<path d="M1.82153 1.95628L1.82153 36.0297L15.5642 19.1837L1.82153 1.95628Z" stroke="white" stroke-width="3.36454" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+
+							<div class="gallery__points">
+								<button class="leftmost" value="1">
+									<svg class="point__first" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8.22705" cy="7.84607" r="7" stroke="white" stroke-width="1.30637"/>
+									</svg>
+								</button>
+
+								<button value="2">
+									<svg class="point__second" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8.22705" cy="7.84607" r="7" stroke="white" stroke-width="1.30637"/>
+									</svg>
+								</button>
+
+								<button value="3">
+									<svg class="point__third" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<circle cx="8.22705" cy="7.84607" r="7" stroke="white" stroke-width="1.30637"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="gallery__swipper">
+							<div class="cool-container"></div>
+							<div class="img-swipper">
+								<img src="../img/gallery/img1.png"  alt="" value="1">
+								<img src="../img/gallery/img2.png"  alt="" value="2">
+								<img src="../img/gallery/img3.png"  alt="" value="3">	
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="features" id="features">
+			<div class="container">
+				<div class="features__wrapper">
+					<h3 class="sup-features__title sup-title text">What’s so special?</h3>
+					<h2 class="features__title title text">features</h3>
+					<div class="features__content ">
+						<h4 class="feature feature__survive feature_active nextVis text" >SURVIVE AT ALL COSTS</h4>
+						<p class="survive__text survive text" id="survive">
+							You have 30 minutes to find a relic, signal for extraction, and grab
+							one of three spots on the rescue chopper.
+						</p>
+						<h4 class="feature feature__create text">CREATE ALLIES AND ENEMIES</h4>
+						<p class="survive__text create text" id="create">
+							You can add your friends and play together, and create enemies to win and get more skill points.
+						</p>
+						<h4 class="feature feature__impress text">IMPRESS THE AUDIENCE</h4>
+						<p class="survive__text_last impress text" id="impress">
+						And also you can make this project more popular, just repost and subscribe to us.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="requirement" id="requirement">
+			<div class="container">
+				<div class="requirement__wrapper">
+					<h3 class="requirement__sup-title sup-title text">Can My Computer Run this game?</h3>
+					<h2 class="requirement__title title text">system requirements</h2>
+					<div class="requirement__system">
+						<div class="system__item">
+							<h4 class="system__title text">OS:</h4>
+							<p class="system__text text">Windows 7 64-bit only<br>(No OSX support at this time)</p>
+						</div>
+						<div class="system__item">
+							<h4 class="system__title text">pROCESSOR:</h4>
+							<p class="system__text text">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+						</div>
+						<div class="system__item">
+							<h4 class="system__title text">mEMORY:</h4>
+							<p class="system__text text">8 GB RAM</p>
+						</div>
+						<div class="system__item">
+							<h4 class="system__title text">storage:</h4>
+							<p class="system__text text">8 GB available space</p>
+						</div>
+						<div class="system__item graphics">
+							<h4 class="system__title text">GRAPHICS:</h4>
+							<p class="system__text text">NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+						</div>			
+				</div>
+			</div>
+		</section>
+
+		<section class="quotes" id="quotes">
+			<div class="container">
+				<div class="quotes__wrapper">
+
+					<div class="quotes__info">
+						<h3 class="quotes__sup-title sup-title text">What people think?</h3>
+						<h2 class="quotes__title title text">Press quotes</h2>
+						<p class="quotes__text text">
+							Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.
+						</p>
+						<a href="#" class="quotes__more text">Read more testimonials</a>
+					</div>
+
+
+					<div class="quotes__list-wrapper">
+						<div class="list-container"></div>
+						<ul class="quotes__list">
+							<li class="quotes__item">
+								<div class="quotes__person person">
+									<div class="person__avatar-wrapper">
+										<img src="../img/avatar/ava-1.png" alt="">
+									</div>
+									<div class="person__info">
+										<h4 class="person__name text">Evan Lahti</h4>
+										<h5 class="person__activity text">PC Gamer</h5>		
+									</div>
+									<a href="#" class="peroson__social">
+										<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+											<path opacity="0.3" d="M18.3981 2.11444C17.7231 2.40008 17.0072 2.58761 16.2741 2.67079C17.0365 2.23292 17.623 1.54094 17.899 0.715209C17.1731 1.12689 16.3789 1.41694 15.5508 1.57282C14.8519 0.859422 13.8744 0.45534 12.8519 0.457037C10.8105 0.457037 9.15361 2.03904 9.15361 3.99056C9.15361 4.26785 9.18627 4.53812 9.25021 4.79618C6.17639 4.64857 3.45216 3.24231 1.62787 1.10395C1.30934 1.62524 1.12764 2.23292 1.12764 2.88071C1.12764 4.10618 1.78024 5.188 2.77231 5.82183C2.18494 5.80463 1.61046 5.65304 1.09706 5.37979V5.42485C1.09706 7.13654 2.37189 8.5649 4.06278 8.89023C3.5182 9.03115 2.94722 9.05182 2.39305 8.95067C2.86384 10.3548 4.22998 11.3763 5.8475 11.406C4.5821 12.3523 2.98781 12.9183 1.25483 12.9183C0.960153 12.918 0.66574 12.9015 0.373047 12.8689C2.00943 13.8712 3.95365 14.457 6.04185 14.457C12.8438 14.457 16.5627 9.07113 16.5627 4.40051C16.5627 4.24774 16.5627 4.09497 16.5513 3.9433C17.2749 3.4429 17.8998 2.82367 18.3969 2.11444H18.3981Z" fill="white"/>
+										</svg>	
+									</a>
+								</div>
+								<p class="quotes__comment text">“One of my gaming highlights of the year.”</p>
+								<span class="quotes__date text">October 18, 2018</span>
+							</li>
+
+							<li class="quotes__item">
+								<div class="quotes__person person">
+									<div class="person__avatar-wrapper">
+										<img src="../img/avatar/ava-2.png" alt="">
+									</div>
+									<div class="person__info">
+										<h4 class="person__name text">Jada Griffin </h4>
+										<h5 class="person__activity text">Nerdreactor</h5>		
+									</div>
+									<a href="#" class="peroson__social">
+										<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+											<path opacity="0.3" d="M18.3981 2.11444C17.7231 2.40008 17.0072 2.58761 16.2741 2.67079C17.0365 2.23292 17.623 1.54094 17.899 0.715209C17.1731 1.12689 16.3789 1.41694 15.5508 1.57282C14.8519 0.859422 13.8744 0.45534 12.8519 0.457037C10.8105 0.457037 9.15361 2.03904 9.15361 3.99056C9.15361 4.26785 9.18627 4.53812 9.25021 4.79618C6.17639 4.64857 3.45216 3.24231 1.62787 1.10395C1.30934 1.62524 1.12764 2.23292 1.12764 2.88071C1.12764 4.10618 1.78024 5.188 2.77231 5.82183C2.18494 5.80463 1.61046 5.65304 1.09706 5.37979V5.42485C1.09706 7.13654 2.37189 8.5649 4.06278 8.89023C3.5182 9.03115 2.94722 9.05182 2.39305 8.95067C2.86384 10.3548 4.22998 11.3763 5.8475 11.406C4.5821 12.3523 2.98781 12.9183 1.25483 12.9183C0.960153 12.918 0.66574 12.9015 0.373047 12.8689C2.00943 13.8712 3.95365 14.457 6.04185 14.457C12.8438 14.457 16.5627 9.07113 16.5627 4.40051C16.5627 4.24774 16.5627 4.09497 16.5513 3.9433C17.2749 3.4429 17.8998 2.82367 18.3969 2.11444H18.3981Z" fill="white"/>
+										</svg>	
+									</a>
+								</div>
+								<p class="quotes__comment text">“The next big thing in the world of streaming and survival games.”</p>
+								<span class="quotes__date text">December 21, 2018</span>
+							</li>
+
+							<li class="quotes__item">
+								<div class="quotes__person person">
+									<div class="person__avatar-wrapper">
+										<img src="../img/avatar/ava-3.png" alt="">
+									</div>
+									<div class="person__info">
+										<h4 class="person__name text">Aaron Williams </h4>
+										<h5 class="person__activity text">Uproxx</h5>		
+									</div>
+									<a href="#" class="peroson__social">
+										<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+											<path opacity="0.3" d="M18.3981 2.11444C17.7231 2.40008 17.0072 2.58761 16.2741 2.67079C17.0365 2.23292 17.623 1.54094 17.899 0.715209C17.1731 1.12689 16.3789 1.41694 15.5508 1.57282C14.8519 0.859422 13.8744 0.45534 12.8519 0.457037C10.8105 0.457037 9.15361 2.03904 9.15361 3.99056C9.15361 4.26785 9.18627 4.53812 9.25021 4.79618C6.17639 4.64857 3.45216 3.24231 1.62787 1.10395C1.30934 1.62524 1.12764 2.23292 1.12764 2.88071C1.12764 4.10618 1.78024 5.188 2.77231 5.82183C2.18494 5.80463 1.61046 5.65304 1.09706 5.37979V5.42485C1.09706 7.13654 2.37189 8.5649 4.06278 8.89023C3.5182 9.03115 2.94722 9.05182 2.39305 8.95067C2.86384 10.3548 4.22998 11.3763 5.8475 11.406C4.5821 12.3523 2.98781 12.9183 1.25483 12.9183C0.960153 12.918 0.66574 12.9015 0.373047 12.8689C2.00943 13.8712 3.95365 14.457 6.04185 14.457C12.8438 14.457 16.5627 9.07113 16.5627 4.40051C16.5627 4.24774 16.5627 4.09497 16.5513 3.9433C17.2749 3.4429 17.8998 2.82367 18.3969 2.11444H18.3981Z" fill="white"/>
+										</svg>	
+									</a>
+								</div>
+								<p class="quotes__comment text">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+								<span class="quotes__date text">December 24, 2018</span>
+							</li>												
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+		<section class="newsletter">
+			<div class="container">
+				<div class="newsletter__wrapper">
+					<div class="newsletter__img-wrapper"></div>
+					<div class="newsletter__content">
+						<h3 class="newsletter__sup-title sup-title text">Want to stay in touch?</h3>
+						<h2 class="newsletter__title title text">newsletter SUBSCRIBE</h2>
+						<p class="newsletter__text text">
+						In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
+						</p>
+						<form action="" class="newsletter__form">
+							<label class="newsletter__label text" for="input">Your email address</label>
+							<input class="newsletter__input" id="input" type="text">
+							<button class="newsletter__sub text">Subscribe now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__nav">
+					<a href="#" class="footer__logo logo">
+						<img src="../img/logo/logo.png" alt="Логотип SOS" width="90" height="90">
+					</a>
+					<ul class="footer-menu menu">
+						<li class="menu__item"><a href="#main" class="text">MAIN</a></li>
+						<li class="menu__item"><a href="#about" class="text">about</a></li>
+						<li class="menu__item"><a href="#features" class="text">game features</a></li>
+						<li class="menu__item"><a href="#requirement" class="text">System requirements</a></li>
+						<li class="menu__item"><a href="#quotes" class="text">quotes</a></li>
+					</ul>
+					<small class="footer__social">
+						<a href="#" class="facebook		">
+							<svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.65382 19.1726H2.56282V9.67859H0.517822V6.40559H2.56282V4.44159C2.56282 1.77259 3.71782 0.183594 6.99582 0.183594H9.72582V3.45659H8.02082C6.74282 3.45659 6.65882 3.91459 6.65882 4.76859L6.65382 6.40559H9.74582L9.38382 9.67859H6.65382V19.1726Z" fill="white"/>
+							</svg>
+						</a>
+						<a href="#" class="twitter">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M21.2138 2.42967C20.4408 2.75167 19.6098 2.96667 18.7388 3.06467C19.6288 2.56467 20.3118 1.77267 20.6338 0.830668C19.7998 1.29267 18.8778 1.62867 17.8958 1.81067C17.1108 1.02467 15.9898 0.534668 14.7508 0.534668C12.3708 0.534668 10.4398 2.34367 10.4398 4.57367C10.4398 4.89067 10.4778 5.19967 10.5518 5.49467C6.96981 5.32567 3.79381 3.71767 1.66781 1.27467C1.29681 1.87167 1.08481 2.56467 1.08481 3.30567C1.08481 4.70567 1.84581 5.94367 3.00181 6.66767C2.29581 6.64567 1.63181 6.46467 1.04981 6.16167C1.04981 6.17967 1.04981 6.19467 1.04981 6.21367C1.04981 8.17067 2.53481 9.80267 4.50681 10.1737C4.14581 10.2657 3.76381 10.3137 3.37181 10.3137C3.09381 10.3137 2.82381 10.2897 2.56081 10.2437C3.10881 11.8467 4.70081 13.0157 6.58681 13.0487C5.11181 14.1317 3.25381 14.7767 1.23381 14.7767C0.885811 14.7767 0.542811 14.7577 0.205811 14.7207C2.11281 15.8657 4.37881 16.5357 6.81281 16.5357C14.7408 16.5357 19.0758 10.3797 19.0758 5.04267C19.0758 4.86667 19.0708 4.69367 19.0628 4.51967C19.9048 3.94967 20.6358 3.23867 21.2138 2.42967Z" fill="white"/>
+							</svg>
+						</a>
+						<a href="#" class="youtube">
+							<svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" viewBox="0 0 26 19" fill="none">
+								<path d="M20.61 0.183594H5.98961C3.12627 0.183594 0.799805 2.55085 0.799805 5.4644V12.8973C0.799805 15.8163 3.12627 18.1781 5.98961 18.1781H20.6046C23.4733 18.1781 25.7944 15.8108 25.7944 12.8973V5.4644C25.7998 2.55085 23.4733 0.183594 20.61 0.183594ZM17.0959 9.54779L10.2575 12.8642C10.0731 12.9524 9.86705 12.82 9.86705 12.6103V5.7679C9.86705 5.55821 10.084 5.42578 10.2629 5.51958L17.1013 9.04564C17.3074 9.15048 17.302 9.44846 17.0959 9.54779Z" fill="white"/>
+							</svg>
+						</a>
+						<a href="#" class="twitch">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+								<path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+								<path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+							</svg>
+						</a>
+					</small>
+				</div>
+				<div class="footer__reference">
+					<div class="reference__copyright text">© 2018 Outpost Games, Inc. All Rights Reserved</div>
+					<ul class="reference__privacy">
+						<li><a href="#" class="privacy__item text">Privacy Policy</a></li>
+						<li><a href="#" class="privacy__item text">Terms of Services</a></li>
+						<li><a href="#" class="privacy__item text">Code of Conduct</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</footer>
+
+	 <script src="../js/sos.js" type="module"></script>
+</body>
+</html>
